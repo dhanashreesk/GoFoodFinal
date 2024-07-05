@@ -8,7 +8,7 @@ export default function Login1() {
   let navigate=useNavigate();
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const response = await fetch(`${window.location.origin}/api/loginuser`, {
+    const response = await fetch(`https://gofoodfinal.onrender.com/api/loginuser`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

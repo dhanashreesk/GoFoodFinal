@@ -24,7 +24,7 @@ export default function Signup() {
     // console.log(latlong)
     let [lat, long] = latlong
     console.log(lat, long)
-    const response = await fetch(`${window.location.origin}/api/getlocation`, {
+    const response = await fetch(`https://gofoodfinal.onrender.com/api/getlocation`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -42,7 +42,7 @@ export default function Signup() {
 
     const handleSubmit= async(e)=>{
         e.preventDefault();
-        const response=await fetch(`${window.location.origin}/api/createuser`,{
+        const response=await fetch(`https://gofoodfinal.onrender.com/api/createuser`,{
             method:'POST',
             headers:{
                 'Content-Type':'application/json'

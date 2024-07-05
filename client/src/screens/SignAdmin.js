@@ -12,7 +12,7 @@ export default function SignAdmin() {
   const [foodCat, setFoodCat] = useState([]);
   const [foodItems, setFoodItems] = useState([]);
   const loadData = async () => {
-    let response = await fetch(`${window.location.origin}/api/foodData`, {
+    let response = await fetch(`https://gofoodfinal.onrender.com/api/foodData`, {
       method: "POST",
       headers: {
         'Content-Type': 'application/json'

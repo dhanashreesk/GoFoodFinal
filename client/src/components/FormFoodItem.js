@@ -19,7 +19,7 @@ export default function FormFoodItem() {
         formData.append('files', image);
 
         try {
-            const response = await fetch(`${window.location.origin}/api/food-items`, {
+            const response = await fetch(`https://gofoodfinal.onrender.com/api/food-items`, {
                 method: 'POST',
                 body: formData
             });

@@ -8,7 +8,7 @@ export default function MyOrder() {
 
     const fetchAllOrdersData = async () => {
         try {
-            const response = await fetch(`${window.location.origin}/api/allOrders`, {
+            const response = await fetch(`https://gofoodfinal.onrender.com/api/allOrders`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
