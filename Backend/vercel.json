@@ -10,13 +10,5 @@
       "src": "/.*",
       "dest": "index.js"
     }
-  ],
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/client/build/index.html"
-    }
   ]
-
-
 }

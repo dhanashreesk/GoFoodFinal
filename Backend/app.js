@@ -25,9 +25,9 @@ const CreateUserRoutes = require('./Routes/createUserRoutes');
 const DisplayDataRoutes = require('./Routes/displayDataRoutes');
 const adminUserRoutes = require('./Routes/adminUserRoutes');
 
-app.get('/', (req, res) => {
-  res.send('hello world');
-});
+// app.get('/', (req, res) => {
+//   res.send('hello world');
+// });
 
 app.use(express.json());
 app.use('/api', OrderDataRoutes);
